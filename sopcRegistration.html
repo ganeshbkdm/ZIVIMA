@@ -1,0 +1,157 @@
+<html>
+        <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <style>
+                .header{
+                background-color:orangered;
+                color: white;
+                height: 33px;
+                font-weight: bold;
+                font-family: 'Lato', sans-serif;
+                font-size: 16px;
+                }
+                body {
+                min-height: 75rem;
+                padding-top: 4.5rem;
+                }
+                ul li a:hover{
+                    display: block;
+                    border:1px solid #FFF;
+                }
+                .blink {
+                        animation: blinker 1s linear infinite;
+                        }
+
+                @keyframes blinker {
+                    50% {
+                        opacity: 0;
+                    }
+                }
+            </style>
+        </head>
+    <body>
+        <!--navigation bar-->
+        <div class="fixed-top">
+                <div class="position-sticky header fixed-top"><marquee>ZIVIMA (Zila Vikas Manch).. </marquee></div>
+                <nav class="navbar navbar-expand-lg " style="background-color: #072136;">
+                        <a class="navbar-brand text-white" href="#">ZIVIMA</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active mask ">
+                              <a class="nav-link text-white" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+                            </li>
+                            <li class="nav-item mask ">
+                              <a class="nav-link text-white" href="#">About</a>
+                            </li>
+                            <li class="nav-item mask ">
+                              <a class="nav-link text-white" href="#">Problem Statement</a>
+                            </li>
+                            <li class="nav-item mask ">
+                               <a class="nav-link text-white" href="#">Important Dates</a>
+                            </li>
+                            <li class="nav-item mask ">
+                              <a class="nav-link text-white" href="#">Contact</a>
+                            </li>
+                          </ul>
+                          <!--Registration modal-->
+                        <span class="blink"><a href="#" class="btn btn-outline text-white" data-toggle="modal" data-target="#myModal">REGISTER</a></span>  
+                        <div class="modal fade" id="myModal">
+                            <div class="modal-dialog modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header" >
+                                        <div class="list-group" style="width: 100%">
+                                            <a class="list-group-item btn btn-outline-secondary" style="text-align: center" href=".../registration.php">Student Team Leader</a>
+                                            <a class="list-group-item btn btn-outline-secondary" style="text-align: center" href="#">Institute</a>
+                                            <a class="list-group-item btn btn-outline-secondary" style="text-align: center" href="#">District Authority</a> 
+                                        </div>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-footer" style="height: fit-content">
+                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                          <a class="btn btn-outline text-white" href="#">LOGIN <i class="fa fa-sign-in" aria-hidden="true"></i></a>
+                          <a class="btn btn-outline text-white" href="#">GRIVENCES <i class="fa fa-comments" aria-hidden="true"></i></a>
+                    
+                        </div>
+                      </nav>
+        </div>
+            <!--end of nav-->
+            
+            <div class="container bg-light" style="margin-top: 25px;align-items: center; ">
+                <h4 class="text-center pt-5">Institute SPOC Registration</h4>
+                <hr>
+                    <form>
+                            <div class="form-group">
+                                
+                                <div class="row mt-5 justify-content-center" >
+                                    <div class="col-sm-4 ">
+                                            <input type="text" class="form-control w-30" id="instituteId" placeholder="Institute Code">
+                                    </div>
+                                    <div class="col-sm-4">
+                                            <button type="submit" class="btn btn-success w-50">Verify</button>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5 justify-content-center">
+                                    <div class="col-sm-4">
+                                            <input type="text" class="form-control " id="name" placeholder="Enter Name" required>
+                                    </div>
+                                    <div class="col-sm-4">
+                                            <input type="text" class="form-control " id="Designation" placeholder=" Designation" required>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-5 justify-content-center">
+                                        <div class="col-sm-4">
+                                                <input type="text" class="form-control " id="Institutename" placeholder="Institute Name" disabled required>
+                                        </div>
+                                        <div class="col-sm-4">
+                                                <input type="text" class="form-control " id="instituteAdd" placeholder="Institute Address" disabled required>
+                                        </div>
+                                </div>
+
+                                <div class="row mt-5 justify-content-center">
+                                        <div class="col-sm-4">
+                                                <input type="email" class="form-control " id="email" placeholder="Enter Email" required>
+                                        </div>
+                                        <div class="col-sm-4">
+                                                <input type="text" class="form-control " id="mobile" placeholder="Enter Contact Number" required>
+                                        </div>
+                                </div>
+
+                                <div class="row mt-5 justify-content-center">
+                                        <div class="col-sm-4">
+                                                <input type="password" class="form-control " id="email" placeholder="Enter password" required>
+                                        </div>
+                                        <div class="col-sm-4">
+                                                <input type="password" class="form-control " id="mobile" placeholder="Confirm password"registration>
+                                        </div>
+                                </div>
+                                     <div class="row mt-5 justify-content-center">
+                                        
+                                                <button type="submit" class="btn btn-success">REGISTER</button>
+                                        &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                   <button type="submit" class="btn btn-danger ">Cancle</button>
+                                        
+                                    </div>
+                                    
+                                </div>
+                            
+                            </form>
+                          <hr>
+            </div>
+                  
+    </body>
+</html>

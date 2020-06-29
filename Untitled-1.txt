@@ -1,0 +1,15 @@
+<?php
+            $name = "ganesh";
+            $email = "ganesh@gmail";
+            $mobile ="9689898565";
+            $password = "gan";		
+            $conn =  mysqli_connect("localhost", "root", "", "test");
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+            else
+                echo "Connected successfully";
+			$q = mysqli_query($conn, "insert into user (name, email, mobile, password) values ('$name', '$email', '$mobile', '$password') ");
+            if($q)
+                echo("sucess");
+ ?>

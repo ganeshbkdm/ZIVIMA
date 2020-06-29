@@ -1,0 +1,183 @@
+<html>
+    <head>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            
+        <style>
+           
+            
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                resize: vertical;
+            }
+            
+            label {
+                padding: 12px 12px 12px 0;
+                display: inline-block;
+            }
+            
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                float: right;
+            }
+            
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+            
+            .container {
+                border-radius: 5px;
+                background-color: #f2f2f2;
+                padding: 20px;
+            }
+            
+            .col-25 {
+                float: left;
+                width: 25%;
+                margin-top: 6px;
+            }
+            
+            .col-75 {
+                float: left;
+                width: 75%;
+                margin-top: 6px;
+            }
+            
+            /* Clear floats after the columns */
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+                .col-25, .col-75, input[type=submit] {
+                width: 100%;
+                margin-top: 0;
+                }
+            }
+            .pad
+            {
+                padding-left: 40px;
+                padding-right:40px; 
+            }
+        </style>
+    </head>
+    <body>
+        <!--navigation bar-->
+        <div class="container-fluid">
+                <nav class="navbar navbar-expand-md text-white " style="background-color: #052c4b;">
+                    <a class="navbar-brand text-white" href="#">ZIVIMA</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" style="color:white" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon text-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse text-white" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-home fa-fw" aria-hidden="true"></i>Home
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-white" href="#">Contact</a>
+                            </li>    
+                        </ul>
+                        
+                    </div>  
+                    <!--icons
+                    <i class="fa fa-instagram fa-2x mr-sm-2" style="color: gray"></i>
+                    <i class="fa fa-twitter fa-2x mr-sm-2" style="color: gray"></i>
+                    <i class="fa fa-facebook fa-2x mr-sm-2" style="color: gray"></i>
+                    <i class="fa fa-youtube fa-2x mr-sm-2" style="color: gray"></i>-->
+
+                    <!--serach box
+                    <form class="form-inline"  style="padding-top:16px"  action="">
+                            <input class="form-control form-control-sm" type="text" placeholder="Search">
+                            <button class="btn btn-outline btn-sm mr-sm-3" type="submit">
+                                    <i class="fa fa-search  mr-sm-2" style="color: gray" ></i>
+                            </button>
+                    </form>-->
+                
+                    <!--Registration modal-->
+                    <a href="#" class="btn btn-outline text-white" data-toggle="modal" data-target="#myModal">
+                        Register
+                    </a>
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header" >
+                                    <div class="list-group" style="width: 100%">
+                                        <a class="list-group-item btn btn-outline-secondary" style="text-align: center" href="#">Student Team Leader</a>
+                                        <a class="list-group-item btn btn-outline-secondary" style="text-align: center" href="#">Institute</a>
+                                        <a class="list-group-item btn btn-outline-secondary" style="text-align: center" href="#">District Authority</a> 
+                                    </div>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                </div>
+                                <div class="modal-footer" style="height: fit-content">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <a href="#" class="btn btn-outline btn-sm" style="color:white">Login &nbsp;<i class="fa fa-sign-in  mr-sm-2" style="color: white"></i></a>
+                    </div>
+                    <div>
+                            <a href="#" active class="btn btn-outline btn-sm" style="color: white">Grievance &nbsp;<i class="fa fa-comment  mr-sm-2" style="color: white"></i></a>
+                    </div>
+                </nav>
+            </div>
+            <!--end of nav-->
+
+            
+            <br>
+        <div class="container">
+                <h2 class="font-weight-bold text-center text-monospace">Grievance Form</h2>
+            <form action="">
+            <div class="row pad" style="margin-top: 30px;">
+                <div class="col-25">
+                <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row pad">
+                <div class="col-25">
+                <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row pad">
+                <div class="col-25">
+                <label for="subject">Subject</label>
+                </div>
+                <div class="col-75">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row" style="align-content: center;padding-left:1000px; padding-top:20px; padding-top: 4opx; ">
+                <input type="submit" value="Submit">
+            </div>
+            </form>
+        </div>
+            
+    </body>
+</html>
